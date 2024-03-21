@@ -2,183 +2,186 @@
 
 const questions = [
     {
-        question: "Q1/12: You're taking the bus on your way back home. It's been a loooong day, what are you thinking about?",
+        question: "Q1/12: Mi đang ngồi trên xe bus trên đường về nhà. Một ngày dài làm việc, mi đang nghĩ gì?",
         image: "images/Q1.gif",
         answers: {
             F: {
-                text: "I'm just so tired and can't wait to go home. Why do everyday feel the same...",
+                text: "mệt vcl, về nhà nghỉ ngơi thôi. Sao mỗi ngày cứ giống nhau thế này...",
                 scores: { T: 0, F: +1 },
             },
             T: {
-                text: "Should I rest or work first when I get home? Most importantly, what's for dinner?",
+                text: "Nên nghỉ trước hay làm việc trước khi về nhà? Quan trọng nhất là tối nay ăn gì?",
                 scores: { T: +1, F: 0 },
             },
         },
     },
     {
-        question: "Q2/12: You look outside the windows, seems like it's going to rain soon. Suddenly everything turns into darkness!!",
+        question: "Q2/12: Mi nhìn ra ngoài cửa sổ, trời sắp mưa rồi. Bất ngờ, mọi thứ trở nên tối đen",
         image: "images/Q2.gif",
         answers: {
             J: {
-                text: "I don't remember this tunnel. *Pull out your phone to look at the map*",
+                text: "Chết mẹ lạc ra hầm thủ thiêm rồi. *Móc điện thoại ra xem bản đồ*",
                 scores: { P: 0, J: +1 },
             },
             P: {
-                text: "*Turn around to see the other's reaction* Should I ask the driver what's going on?",
+                text: "*Quay lại nhìn xem mọi người có bình tĩnh không* Có nên hỏi người ta không?",
                 scores: { P: +1, J: 0 },
             },
         },
     },
     {
-        question: "Q3/12: Before you can do anything, the bus stops and everything around you floats up!",
+        question: "Q3/12: Trước khi mi kịp làm gì, xe bus dừng lại và mọi thứ xung quanh mi bắt đầu bay lên!",
         image: "images/Q3.gif",
         answers: {
             S: {
-                text: "Ok this is weird, am I dreaming? *pinch your arm*",
+                text: "Lạ vãi ò, mình đang mơ à? *nhéo tay*",
                 scores: { S: +1, N: 0 },
             },
             N: {
-                text: "Is this a prank? Am I getting kidnapped by aliens?!",
+                text: "Khứa nào giỡn mất dạy? Hay là mình đang bị bắt cóc bởi người ngoài hành tinh?!",
                 scores: { S: 0, N: +1 },
             },
         },
     },
     {
-        question: "Q4/12: Amidst the surprise, your eyes catch something drifting past the window.",
+        question: "Q4/12: Trong đám hỗn loạn, mi thấy thứ gì đó lướt qua cửa sổ.",
         image: "images/Q4.gif",
         answers: {
             F: {
-                text: "Woahhh...so many cats! How cute!! I wanna give them a hug!",
+                text: "Woahh...mèo nhiều vãi! Dễ huông, dễ huông!! Cho ôm cái coi!",
                 scores: { T: 0, F: +1 },
             },
             T: {
-                text: "Cats? In space? That's kinda odd... How do they survive out there?!",
+                text: "Mèo? Ngoài vũ trụ? Lạ thế... Chúng sống được như thế nào vậy?!",
                 scores: { T: +1, F: 0 },
             },
         },
     },
     {
-        question: "Q5/12: 'Welcome Aboard!' a small robot appears and annouces, 'We will reach our destination in 5 months 6 days and 2 hours!'",
+        question: "Q5/12: 'Mừng cưng lên tàu' một robot nhỏ xuất hiện và nói, 'Chúng ta sẽ đến nơi trong 5 tháng 6 ngày và 2 giờ nữa!'",
         image: "images/Q5.gif",
         answers: {
             P: {
                 text: "Cool! A space cruise?! Where are we going? Do I get a spacesuit? This is so exciting!",
+                text: "Ngon! Du lịch vũng tàu, à lộn, tàu vũ trụ à? Mình đi đâu? Có được mặc áo phi hành da heo không? Thích quá!",
                 scores: { P: +1, J: 0 },
             },
             J: {
-                text: "Hey uh...Am I in space? How did I get here? When can I go home?! Why..",
+                text: "Ừm...Mình ở đâu vậy? Làm sao mình lại ở đây? Khi nào mình về nhà?! Tại sao...",
                 scores: { P: 0, J: +1 },
             },
         },
     },
     {
-        question: "Q6/12: The robot just points to the back of the bus which now looks more like inside of a spaceship! What do you want to see first?",
+        question: "Q6/12: Con robot chỉ vào phía sau xe bus, giờ trông giống bên trong một tàu vũ trụ hơn! Mi muốn xem cái gì trước?",
         image: "images/Q6.gif",
         answers: {
             I: {
-                text: "Solar system themed fountain in the middle. I want to take pictures with it.",
+                text: "Thái dương hệ có đài phun nước ở giữa. Mình muốn chụp ảnh với nó",
                 scores: { I: 0, E: +1 },
             },
             E: {
                 text: "Cozy corner with a massaging chair. I need to sit down and process.",
+                text: "Góc nhỏ với ghế massage. Mình cần ngồi xuống để xem cái qq j đang xảy ra z",
                 scores: { I: +1, E: 0 },
             },
         },
     },
     {
-        question: "Q7/12: On the way back to your seat, you are surrounded by cats! 'Unauthorized passenger detected, CAPTURE CAPTURE!'",
+        question: "Q7/12: Trên đường trở lại ghế, mi bị bao quanh bởi mèo! 'Phát hiện hành khách trái phép, BẮT LẤY BẮT LẤY!'",
         image: "images/Q7.gif",
         answers: {
             S: {
-                text: "Woah! What do you mean unauthorized? I'm the passenger of this cruise!",
+                text: "Bé ơi từ từ! trái phép là seo ? mình là hành khách của tàu này!",
                 scores: { S: +1, N: 0 }
             },
             N: {
-                text: "Ok, I have no idea what's going on. How about we calm down and chat for a bit?",
+                text: "Kê, mình không hiểu gì đang xảy ra. Sao mình không ngồi xuống và đàm đạo chút nhỉ?",
                 scores: { S: 0, N: +1 },
             },
         },
     },
     {
-        question: "Q8/12: Suddenly, the robot glides in, it whispers something to the cats that makes them stop.",
+        question: "Q8/12: Bất ngờ, con robot lướt qua, nó nói cái gì đó với mèo khiến chúng dừng lại.",
         image: "images/Q8.gif",
         answers: {
             E: {
-                text: "Bob!! Thank you! You come to save me, right?",
+                text: "Bob!! Mơn nhe! Mày đến cứu tao à?",
                 scores: { E: +1, I: 0 },
             },
             I: {
-                text: "HA! That's right! Back off, cats! Am I safe to go now?!",
+                text: "HA! Đúng rồi! Lui lại đi mấy con mồn! Mình an toàn rồi chứ?!",
                 scores: { E: 0, I: +1 },
             },
         },
     },
     {
-        question: "Q9/12: The robot transforms into a giant vacuum cleaner, the cats use it to point at you!",
+        question: "Q9/12: Con robot biến thành cái máy hút bụi khổng lồ, con mèo dùng nó chĩa vào mi!",
         image: "images/Q9.gif",
         answers: {
             J: {
-                text: "Throw your coat at them as distraction, run towards the big green 'EXIT' sign!",
+                text: "Quăng áo để đánh lạc hương chúng, chạy về phía biển báo 'EXIT' màu xanh lớn!",
                 scores: { J: +1, P: 0 },
             },
             P: {
-                text: "Run in random direction, confuse them, blend in with the crowd!",
+                text: "Chạy tùm lum, làm loạn hệ tiền đình của chúng, hòa mình vào đám đông!",
                 scores: { J: 0, P: +1 },
             },
         },
     },
     {
-        question: "Q10/12: You run past the gift shop. Looks like you got rid of them. It wouldn't hurt to get some souvenirs, right?",
+        question: "Q10/12: Mi chạy qua cửa hàng quà tặng. Có vẻ như mi đã thoát khỏi chúng. Mua vài món quà lưu niệm cũng không tồi chứ?",
         image: "images/Q10.gif",
         answers: {
             F: {
                 text: "Get the Jupiter headphone, wear it to hear people's thoughts!",
+                text: "Lấy tai nghe Mộc Tinh, đeo vào để nghe được suy nghĩ của người khác! ",
                 scores: { F: +1, T: 0 },
             },
             T: {
-                text: "Get the Mars watch, turn it and you can time travel!",
+                text: "Lấy đồng hồ Hỏa Tinh, quay nó và bạn có thể du hành thời gian!",
                 scores: { F: 0, T: +1 },
             },
         },
 
     },
     {
-        question: "Q11/12: The giant vacuum cleaner suddenly emerges in front of you! You're sucked into its vortex!!!",
+        question: "Q11/12: Máy hút bụi khổng lồ đột nhiên xuất hiện trước mặt mi! Mi bị hút vào trong vòng xoáy của nó!!!",
         image: "images/Q11.gif",
         answers: {
             S: {
-                text: "It's ok, this is just a dream! I'll wake up soon! *close your eyes and give up*",
+                text: "Ổn mà, mình chỉ đang mơ thôi! Mình sẽ tỉnh ngay thôi! *đóng mắt và từ bỏ*",
                 scores: { S: +1, N: 0 },
             },
             N: {
-                text: "I'll find the way out! Maybe there are some secret doors! *look around for the way out*",
+                text: "Mình sẽ tìm cách thoát ra! Có lẽ có cửa bí mật nào đó! *nhìn xung quanh để tìm cách thoát ra*",
                 scores: { S: 0, N: +1 },
             },
         },
     },
     {
-        question: "Q12/12: After a moment of darkness, you find yourself back in the bus. 'Are you alright?' the ticket inspector asks",
+        question: "Q12/12: Sau một khoảng thời gian tối đen, mi thấy mình đang ngồi trên xe bus. 'Con ổn chứ?' người kiểm tra vé hỏi",
         image: "images/Q12.gif",
         answers: {
             I: {
-                text: "Woah! I thought I was captured... Nevermind! I'm alright now, I guess? *panic in silence*",
+                text: "Woah! Mình tưởng mình bị bắt... Thôi! Mình ổn rồi, chắc là vậy? *hoảng sợ trong im lặng*",
                 scores: { E: 0, I: +1 },
             },
             E: {
-                text: "You won't believe it...I think I just had the wildest dream ever! *tell him about your space adventure*",
+                text: "Chú không tin được đâu...Con nghĩ mình vừa có một giấc mơ điên rồ! *kể về cuộc phiêu lưu vũ trụ của mình*",
                 scores: { E: +1, I: 0 },
             },
         },
     },
     {
-        question: "When you look up again, the inspector's already gone. You glance outside the window, darkness creeps in as the bus enters another tunnel...",
+        question: "Khi mi nhìn lên, người kiểm tra vé đã biến mất. Mi nhìn ra ngoài cửa sổ, mọi thứ trở nên tối đen khi xe bus đi qua một hầm khác...",
         image: "images/Q13.gif",
         answers: {
             K: {
-                text: "Wait...was that Bob?",
+                text: "Khoan... Bob đó hả",
             },
             U: {
-                text: "Oh no...Do I have to go through this again?",
+                text: "Trời mé... nữa sao",
             },
         },
     },
